@@ -1,0 +1,31 @@
+body {
+  display: grid;
+  grid-template-rows: auto auto; /* Adjust depending on the number of sections */
+  background-color: rgba(248, 247, 245, 1);
+  font-family: Albert Sans, sans-serif;
+  font-weight: 400;
+  margin: 0;
+
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-8%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}

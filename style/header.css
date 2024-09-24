@@ -1,0 +1,38 @@
+.header,
+.portfolio-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 500;
+  align-items: center;
+  color: rgb(79, 79, 78);
+  height: 80px;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 40px;
+
+}
+
+.about-header-text {
+  font-weight: 500;
+  transition: all .2s;
+}
+
+.about-header-text:hover {
+  font-weight: 800px;
+}
+
+.portfolio-links {
+  width: 120px;
+  justify-content: right;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+

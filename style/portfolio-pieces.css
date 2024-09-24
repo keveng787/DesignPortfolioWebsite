@@ -1,0 +1,83 @@
+.thumbnail-grid {
+  background-color: #f6f2ed;
+
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 48px;
+  padding-bottom: 148px;
+}
+
+@media (max-width:950px) {
+  .thumbnail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:500px) {
+  .thumbnail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.thumnail-grid-column {
+  display: flex;
+  flex-direction:column;
+  gap: 20px;
+}
+
+.spotify-project-preview,
+.t-project-preview,
+.leave-project-preview,
+.kino-project-preview,
+.record-project-preview {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(210, 210, 194);
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.spotify-project-preview img,
+.t-project-preview img,
+.leave-project-preview img,
+.kino-project-preview img,
+.record-project-preview img {
+  max-width: 100%;            /* Image will not exceed container width */
+  max-height: 100%;           /* Image will not exceed container height */
+  width: auto;                /* Control the width based on content */
+  height: auto;               /* Maintain aspect ratio */
+  object-fit: contain;        /* Ensure the image fits within the container */
+}
+
+.spotify-project-preview {
+  background-color: rgb(239, 237, 214);
+}
+
+.leave-project-preview {
+  background-color: rgb(119, 147, 113);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.record-project-preview {
+  background-color: rgb(208, 206, 214);
+}
+
+.t-project-preview {
+  background-color: rgb(236, 232, 231);
+  padding: 10%;
+}
+
+.preview-description {
+  color: #454545;
+  font-size: 14px;
+  margin: 0px;
+  margin-top: -10px;
+}
