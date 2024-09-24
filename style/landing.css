@@ -36,10 +36,6 @@
   .intro-description {
     font-size: 18px;
   }
-
-  .about-description {
-    font-size: 14px;
-  }
 }
 
 .profile-container {
@@ -95,6 +91,21 @@
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 40px;
+}
+
+
+@media (max-width:500px) {
+  .about-me {
+    font-size: 2
+    4px;
+  }
+  .about-description {
+    font-size: 16px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .face-container {
