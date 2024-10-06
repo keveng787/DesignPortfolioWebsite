@@ -1,6 +1,6 @@
 .thumbnail-grid {
   background-color: #f6f2ed;
-
+  /* FAF7F0 */ 
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -8,7 +8,7 @@
   padding-left: 6%;
   padding-right: 6%;
   padding-top: 48px;
-  padding-bottom: 148px;
+  padding-bottom: 188px;
 }
 
 @media (max-width:950px) {
@@ -42,6 +42,17 @@
   width: 100%;
   border-radius: 10px;
   box-sizing: border-box;
+  cursor: pointer;
+
+  transition: box-shadow .15s ease;
+}
+
+.spotify-project-preview:hover,
+.t-project-preview:hover,
+.leave-project-preview:hover,
+.kino-project-preview:hover,
+.record-project-preview:hover {
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.12);
 }
 
 .spotify-project-preview img,

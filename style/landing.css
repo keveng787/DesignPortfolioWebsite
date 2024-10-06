@@ -58,7 +58,7 @@
   padding-right: 6%;
 
   padding-bottom: 200px;
-  padding-top: 64px;
+  padding-top: 14px;
 }
 
 .waves {
@@ -106,6 +106,22 @@
   .about-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.top-button {
+  background-color: transparent;
+  color: rgb(139, 139, 138);
+  border-style: solid;
+  border-color: rgb(143, 142, 140);
+  border-radius: 20px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  cursor:pointer;
+
 }
 
 .face-container {

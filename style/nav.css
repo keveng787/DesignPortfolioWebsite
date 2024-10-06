@@ -1,13 +1,13 @@
-.header,
+.nav,
 .portfolio-links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.header {
-  font-size: 16px;
-  font-weight: 500;
+.nav {
+  font-size: 18px;
+  font-weight: 600;
   align-items: center;
   color: rgb(79, 79, 78);
   height: 80px;
@@ -17,14 +17,9 @@
   margin-bottom: 80px;
 }
 
-.home-name {
-  font-weight: 600;
-}
 
-.about-header-text {
-  font-weight: 600;
-  padding-left: 1px;
-  padding-right: 1px;
+.about-header-text, 
+.home-name {
   box-sizing: border-box;
   border: 2.5px solid transparent;
   transition: all .2s;
@@ -34,11 +29,6 @@
 .about-header-text:hover {
   border-bottom: 2.5px solid rgb(255, 203, 106);
 
-}
-
-.portfolio-links {
-  width: 120px;
-  justify-content: right;
 }
 
 a {

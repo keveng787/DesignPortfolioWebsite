@@ -1,12 +1,10 @@
 body {
   display: grid;
-  grid-template-rows: auto auto; /* Adjust depending on the number of sections */
-  background-color: rgba(248, 247, 245, 1);
+  grid-template-rows: auto auto;  /*Adjust depending on the number of sections */
+  background-color: #f8f7f5;
   font-family: Albert Sans, sans-serif;
   font-weight: 400;
   margin: 0;
-
-
 }
 
 html {

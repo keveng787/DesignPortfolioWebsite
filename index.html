@@ -12,25 +12,23 @@
   <link rel="stylesheet" href="style/footer.css">
   <link rel="stylesheet" href="style/portfolio-pieces.css">
   <link rel="stylesheet" href="style/general.css">
-  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/nav.css">
   <script defer src="app.js"></script>
 
   <title>KevinEngPortfolio</title>
 </head>
 
 <body>
-  <div class="header">
+  <div class="nav">
     <div class="home-name">
       Kevin Eng
     </div>
-    <div class="portfolio-links">
-      <div class="about-header-text">
-        <a href="#about-section-link">About</a>
-      </div>
+    <div class="about-header-text">
+      <a href="#about-section-link">About</a>
     </div>
   </div>
 
-  <section class="landing-section hidden">
+  <section class="landing-section hidden" id="top">
     <div class="landing-grid">
       <div class="intro-container">
         <h1 class="intro-text">
@@ -43,14 +41,15 @@
       </div>
     </div>
   </section>
-
   <section class="portfolio-section">
     <div class="thumbnail-grid">
       <!--Col1-->
       <div class="thumnail-grid-column">
-        <div class="spotify-project-preview">
-          <img class="thumbnail" src="images/landing-images/SpotifyMock.png" alt="">
-        </div>
+        <a href="pages/spotify-page.html">
+          <div class="spotify-project-preview">
+            <img class="thumbnail" src="images/landing-images/SpotifyMock.png" alt="">
+          </div>
+        </a>
         <p class="preview-description">
           Spotify Social Feature
         </p>
@@ -63,9 +62,11 @@
       </div>
       <!--Col2-->
       <div class="thumnail-grid-column">
-        <div class="leave-project-preview">
-          <img class="thumbnail" src="images/landing-images/LeaveThumbnail.png" alt="">
-        </div>
+        <a href="/pages/travel-page.html">
+          <div class="leave-project-preview">
+            <img class="thumbnail" src="images/landing-images/LeaveThumbnail.png" alt="">
+          </div>
+        </a>
         <p class="preview-description">
           Travel App for Students
         </p>
@@ -89,10 +90,12 @@
 
   </section>
 
+  <!--
   <div>
     <img src="images/landing-images/waves.svg" class="waves" alt="">
   </div>
-
+  -->
+  
   <section class="about-section" id="about-section-link">
     <div class="about-grid">
       <div class="hidden">
@@ -100,16 +103,20 @@
           About Me
         </h2>
         <p class="about-description">
-          Hello again! My name is Kevin. I am a designer and developer from New York and am pursuing a bachelors degree in Computer Science and 
-          Design at Northeastern University. I'm always experimenting with new tools and techniques in the digital design space. Through research, ideation, and iteration, I aim to create memorable digital experiences. 
-          When I'm not coding or designing, you'll find me creating 3D animations, 3D printing, and exploring new parts of the city.
+          Hello again! My name is Kevin. I am a designer and developer from New York and am pursuing a bachelors degree
+          in Computer Science and
+          Design at Northeastern University. I'm always experimenting with new tools and techniques in the digital
+          design space. Through research, ideation, and iteration, I aim to create memorable digital experiences.
+          When I'm not coding or designing, you'll find me creating 3D animations, 3D printing, and exploring new parts
+          of the city.
         </p>
       </div>
       <div class="face-container">
         <img class="face-photo" src="images/landing-images/Face.png" alt="">
       </div>
     </div>
-    
+    <button onclick="topFunction()" id="myBtn" class="top-button" title="Go to top">Beam me up!</button>
+
   </section>
   <section class="footer">
     <div class="footer-info">
@@ -118,7 +125,7 @@
       <p class="copyright">&#169 Kevin Eng</p>
     </div>
   </section>
-  
+
 </body>
 
 </html>
