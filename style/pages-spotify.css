@@ -1,0 +1,34 @@
+.hifi1-img,
+.lofi-img,
+.color-audit-img,
+.sketches2-img,
+.sketches1-img,
+.interview-img {
+  position: relative;
+  display: flex;
+  border-radius: 30px;
+
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+
+.media-container {
+  background-color: rgb(210, 210, 194);
+}
+
+.interview-img {
+  margin: 10px -80px;
+}
+
+.lofi-img,
+.color-audit-img,
+.sketches2-img,
+.sketches1-img {
+  margin: 10px 20px;
+}
+
+.hifi1-img {
+  margin: 10px -100px;
+}

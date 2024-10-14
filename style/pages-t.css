@@ -1,0 +1,14 @@
+.media-container {
+  background-color: rgb(222, 222, 222);
+  height: 400px;
+  padding: 20px 0px;
+}
+
+.main-img{
+}
+
+.background-video {
+  border-radius: 5px;
+  height: 400px;
+  clip-path: inset(0 1px 12px 0); /* Crops 10px from the right side */
+}

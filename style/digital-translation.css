@@ -1,0 +1,11 @@
+.media-container {
+  background-color: rgb(220, 218, 233);
+}
+
+.hifi-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  height: 400px;
+}
