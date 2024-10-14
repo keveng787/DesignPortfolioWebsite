@@ -4,11 +4,23 @@
   padding: 20px 0px;
 }
 
+h3 {
+  margin: 0px;
+}
+
 .main-img{
 }
 
 .background-video {
-  border-radius: 5px;
-  height: 400px;
-  clip-path: inset(0 1px 12px 0); /* Crops 10px from the right side */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vid-background {
+  width: 45vw; /* Slightly larger than the viewport */
+  overflow: hidden;
+  padding-top: 10px;
+  background-color: #f8f7f5;
+
 }
