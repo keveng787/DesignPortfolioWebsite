@@ -9,3 +9,17 @@
   gap: 10px;
   height: 400px;
 }
+
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vid-background {
+  width: 55vw; /* Slightly larger than the viewport */
+  overflow: hidden;
+  padding-top: 10px;
+
+}
