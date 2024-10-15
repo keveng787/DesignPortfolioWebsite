@@ -32,3 +32,11 @@
 .hifi1-img {
   margin: 10px -100px;
 }
+
+.pitch-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  height: 200px;
+}
