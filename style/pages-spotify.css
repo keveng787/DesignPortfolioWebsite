@@ -3,7 +3,8 @@
 .color-audit-img,
 .sketches2-img,
 .sketches1-img,
-.interview-img {
+.interview-img,
+.persona-img {
   position: relative;
   display: flex;
   border-radius: 30px;
@@ -25,7 +26,8 @@
 .lofi-img,
 .color-audit-img,
 .sketches2-img,
-.sketches1-img {
+.sketches1-img,
+.persona-img {
   margin: 10px 20px;
 }
 

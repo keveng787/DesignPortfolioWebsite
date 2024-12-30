@@ -44,6 +44,10 @@ body p {
 
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
 .project-title {
   font-size: 36px;
   font-weight: 800;
