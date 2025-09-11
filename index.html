@@ -1,79 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Eng - UI/UX Designer</title>
-    <link rel="stylesheet" href="style/index.css">
-    <style>
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style/landing.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/portfolio-pieces.css">
+  <link rel="stylesheet" href="style/general.css">
+  <link rel="stylesheet" href="style/nav.css">
+  <script defer src="app.js"></script>
+
+  <title>KevinEngPortfolio</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">Kevin Eng</div>
-            <ul class="nav-links">
-                <li><a href="#work">Work</a></li>
-                <!-- <li><a href="#experiments">Experiments</a></li> -->
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="nav">
+    <div class="home-name">
+      Kevin Eng
+    </div>
+    <div class="about-header-text">
+      <a href="#about-section-link">About</a>
+    </div>
+  </div>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Kevin Eng &#183; Designer</h1>
-            <!-- <p class="subtitle">UI/UX Designer</p> -->
-            <p class="tagline">Creating meaningful digital experiences through thoughtful design and user-centered solutions</p>
-        </div>
-        <div class="scroll-indicator">
-            <p>View Projects</p>
-            <div class="scroll-arrow">↓</div>
-        </div>
-    </section>
+  <section class="landing-section hidden" id="top">
+    <div class="landing-grid">
+      <div class="intro-container">
+        <h1 class="intro-text">
+          Hi, my <br>
+          name is <strong>Kevin</strong>
+        </h1>
+        <p class="intro-description">
+          I'm a developer and designer.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio-section">
+    <div class="thumbnail-grid">
+      <!--Col1-->
+      <div class="thumnail-grid-column">
+        <a href="pages/spotify-page.html">
+          <div class="spotify-project-preview">
+            <img class="thumbnail" src="images/landing-images/SpotifyMock.png" alt="">
+          </div>
+        </a>
+        <p class="preview-description">
+          Spotify Social Feature
+        </p>
+        <a href="pages/digital-translation.html">
+          <div class="record-project-preview">
+            <img class="thumbnail" src="images/landing-images/RecordThumnail.png" alt="">
+          </div>
+        </a>
+        <p class="preview-description">
+          Digital Translation: Record Player
+        </p>
+      </div>
+      <!--Col2-->
+      <div class="thumnail-grid-column">
+        <a href="/pages/travel-page.html">
+          <div class="leave-project-preview">
+            <img class="thumbnail" src="images/landing-images/LeaveThumbnail.png" alt="">
+          </div>
+        </a>
+        <p class="preview-description">
+          Travel App for Students
+        </p>
+        <a href="/pages/boston-t-page.html">
+          <div class="t-project-preview">
+            <img class="thumbnail" src="images/landing-images/Display1Orange.jpg" alt="">
+          </div>
+        </a>
 
-    <main>
-        <section class="featured-projects" id="work">
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <div class="project-content">
-                        <h3 class="project-title">E-Commerce Mobile App</h3>
-                        <p class="project-description">A sleek mobile shopping experience with intuitive navigation and seamless checkout process. Focused on reducing cart abandonment through strategic UX improvements and streamlined user flow.</p>
-                        <div class="project-tags">
-                            <span class="tag">Mobile Design</span>
-                            <span class="tag">Figma</span>
-                            <span class="tag">User Research</span>
-                        </div>
-                    </div>
-                </div>
+        <p class="preview-description">
+          Boston T Redesign
+        </p>
+      </div>
+      <!--Col3-->
+      <div class="thumnail-grid-column">
+        <a href="pages/kino-page.html">
+          <div class="kino-project-preview">
+            <img class="thumbnail" src="images/landing-images/KinoMock.png" alt="">
+          </div>
+        </a>
+        <p class="preview-description">
+          Kino Movie App
+        </p>
 
-                <div class="project-card">
-                    <div class="project-container"><img class="project-image" src="images/landing-images/Leave.png" alt=""></div>
-                    <div class="project-content">
-                        <h3 class="project-title">SaaS Dashboard</h3>
-                        <p class="project-description">Clean, data-driven dashboard design for analytics platform with complex information architecture. Emphasized clarity and usability for data-heavy interfaces.</p>
-                        <div class="project-tags">
-                            <span class="tag">Web Design</span>
-                            <span class="tag">Data Visualization</span>
-                            <span class="tag">Prototyping</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <div class="project-content">
-                        <h3 class="project-title">Educational Platform</h3>
-                        <p class="project-description">User-friendly learning management system focusing on student engagement and accessibility. Designed to support diverse learning styles and educational needs.</p>
-                        <div class="project-tags">
-                            <span class="tag">UX Research</span>
-                            <span class="tag">Accessibility</span>
-                            <span class="tag">Wireframing</span>
-                        </div>
-                    </div>
-                </div>
+      </div>
+    </div>
 
   </section>
 
@@ -111,81 +132,6 @@
     </div>
   </section>
 
-        <section class="gallery-cta">
-            <h2>Want to See More?</h2>
-            <p>Explore my complete portfolio including experimental projects, case studies, and design explorations</p>
-            <a href="#gallery" class="cta-button">View Full Gallery</a>
-        </section>
-    </main>
-
-    <footer id="contact">
-        <div class="contact-info">
-            <h2>Let's Work Together</h2>
-            <p>Ready to create something amazing? Let's discuss your next project.</p>
-            
-            <div class="social-links">
-                <a href="#" class="social-link">📧</a>
-                <a href="#" class="social-link">💼</a>
-                <a href="#" class="social-link">🐦</a>
-                <a href="#" class="social-link">📷</a>
-            </div>
-            
-            <p>email@yourname.com | 555-123-4567</p>
-        </div>
-    </footer>
-    
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Header hide/show on scroll
-        let lastScrollY = window.scrollY;
-        let heroHeight = 0;
-
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            const nav = document.querySelector('nav');
-            const hero = document.querySelector('.hero');
-            const currentScrollY = window.scrollY;
-
-            // Calculate hero height if not already done
-            if (heroHeight === 0) {
-                heroHeight = hero.offsetHeight;
-            }
-
-            // Hide header when scrolled past 50% of hero height
-            if (currentScrollY > heroHeight * 0.5) {
-                header.classList.add('hidden');
-            } else {
-                header.classList.remove('hidden');
-                
-                // Update nav styling based on scroll position
-                if (currentScrollY > 100) {
-                    nav.style.background = '#ffffff';
-                    nav.style.boxShadow = '0 6px 25px rgba(0, 0, 0, 0.15)';
-                } else {
-                    nav.style.background = '#ffffff';
-                    nav.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
-                }
-            }
-
-            lastScrollY = currentScrollY;
-        });
-
-        // Project card click handlers (you can customize these)
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('click', () => {
-                // Add your project detail navigation here
-                console.log('Navigate to project details');
-            });
-        });
-    </script>
 </body>
+
 </html>
