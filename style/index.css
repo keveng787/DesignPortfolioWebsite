@@ -205,7 +205,6 @@
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
             transition: all 0.3s ease;
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="%237D7F54" stroke="%23ffffff" stroke-width="2"/><path d="M16 20h8m-4-4l4 4-4 4" stroke="%23ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>') 20 20, pointer;
             display: flex;
             align-items: stretch;
         }
@@ -215,14 +214,24 @@
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         }
 
+        .project-container {
+          display: inline-flex;
+        }
+
         .project-image {
+            width: 60%;
+            aspect-ratio: 4/3;
+            background: #7D7F54;
+        }
+
+        /* .project-image {
             width: 40%;
             aspect-ratio: 4/3;
             background: #7D7F54;
             position: relative;
             overflow: hidden;
             flex-shrink: 0;
-        }
+        } */
 
         .project-image::before {
             content: '🎨';
