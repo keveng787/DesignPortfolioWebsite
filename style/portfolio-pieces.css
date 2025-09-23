@@ -1,14 +1,10 @@
 .thumbnail-grid {
-  background-color: #f6f2ed;
   /* FAF7F0 */ 
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   
-  padding-left: 6%;
-  padding-right: 6%;
   padding-top: 48px;
-  padding-bottom: 188px;
 }
 
 @media (max-width:950px) {
@@ -44,7 +40,7 @@
   box-sizing: border-box;
   cursor: pointer;
 
-  transition: box-shadow .15s ease;
+  transition: all .2s ease;
 }
 
 .spotify-project-preview:hover,
@@ -52,7 +48,8 @@
 .leave-project-preview:hover,
 .kino-project-preview:hover,
 .record-project-preview:hover {
-  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.12);
+  transform: scale(1.02);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
 }
 
 .spotify-project-preview img,
@@ -63,7 +60,7 @@
   max-width: 100%;            /* Image will not exceed container width */
   max-height: 100%;           /* Image will not exceed container height */
   width: auto;                /* Control the width based on content */
-  height: auto;               /* Maintain aspect ratio */
+  height: 300px;               /* Maintain aspect ratio */
   object-fit: contain;        /* Ensure the image fits within the container */
 }
 
