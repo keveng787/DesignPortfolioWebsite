@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kevin Eng - UI/UX Designer</title>
   <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="https://use.typekit.net/mpf1qhf.css">
 </head>
 <link rel="stylesheet" href="style/portfolio-pieces.css">
 </head>
@@ -26,15 +27,18 @@
 
   <section class="hero" id="home">
     <div class="hero-content">
-      <h1>Kevin Eng · Designer</h1>
+      <h1>I'm <span>Kevin</span>, a <span>UX designer</span> </h1>
       <!-- <p class="subtitle">UI/UX Designer</p> -->
       <p class="tagline">Creating meaningful digital experiences through thoughtful design and user-centered solutions
       </p>
     </div>
-    <div class="scroll-indicator">
-      <p>View Projects</p>
-      <div class="scroll-arrow">↓</div>
+    <div class="hero-bottom">
+      <div class="scroll-indicator">
+        <p>View Projects</p>
+        <div class="scroll-arrow">↓</div>
+      </div>
     </div>
+
   </section>
 
   <main>
@@ -159,21 +163,21 @@
         heroHeight = hero.offsetHeight;
       }
 
-      // Hide header when scrolled past 50% of hero height
-      if (currentScrollY > heroHeight * 0.5) {
-        header.classList.add('hidden');
-      } else {
-        header.classList.remove('hidden');
+      // // Hide header when scrolled past 50% of hero height
+      // if (currentScrollY > heroHeight * 0.5) {
+      //   header.classList.add('hidden');
+      // } else {
+      //   header.classList.remove('hidden');
 
-        // Update nav styling based on scroll position
-        if (currentScrollY > 100) {
-          nav.style.background = '#ffffff';
-          nav.style.boxShadow = '0 6px 25px rgba(0, 0, 0, 0.15)';
-        } else {
-          nav.style.background = '#ffffff';
-          nav.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
-        }
-      }
+      //   // Update nav styling based on scroll position
+      //   if (currentScrollY > 100) {
+      //     nav.style.background = '#ffffff';
+      //     nav.style.boxShadow = '0 6px 25px rgba(0, 0, 0, 0.15)';
+      //   } else {
+      //     nav.style.background = '#ffffff';
+      //     nav.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+      //   }
+      // }
 
       lastScrollY = currentScrollY;
     });
