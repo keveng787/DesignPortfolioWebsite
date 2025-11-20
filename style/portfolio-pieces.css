@@ -1,5 +1,4 @@
 .thumbnail-grid {
-  background-color: #f6f2ed;
   /* FAF7F0 */ 
   display: grid;
   gap: 20px;
@@ -73,8 +72,6 @@
 
 .leave-project-preview {
   background-color: rgb(146, 167, 132);
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .record-project-preview {
@@ -88,7 +85,7 @@
 
 .preview-description {
   color: #454545;
-  font-size: 14px;
+  font-size: 1rem;
   margin: 0px;
-  margin-top: -10px;
+  margin-top: -8px;
 }

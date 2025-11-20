@@ -16,14 +16,13 @@ body p {
 }
 
 .home-text {
-  box-sizing: border-box;
-  border: 2.5px solid transparent;
+  font-family: 'Alfabet', 'Inter', sans-serif;
+  border-bottom: 2.5px solid transparent;
   transition: all .2s;
-  box-sizing: border-box;
 }
 
 .home-text:hover {
-  border-bottom: 2.5px solid rgb(255, 203, 106);
+  border-bottom: 2.5px solid #4c8863;
 }
 
 .full-width-container {

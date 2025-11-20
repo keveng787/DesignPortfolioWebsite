@@ -6,30 +6,33 @@
 }
 
 .nav {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 600;
   align-items: center;
-  color: rgb(79, 79, 78);
   height: 80px;
   padding-left: 6%;
   padding-right: 6%;
   padding-bottom: 0px;
-  margin-bottom: 80px;
   
+  color: rgb(90, 92, 90);
 }
 
 
-.about-header-text, 
-.home-name {
+.about-header-text {
   border: none;
   box-sizing: border-box;
   border-bottom: 2.5px solid transparent;
   transition: border-color .2s;
+}
 
+.home-name {
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 2.5px solid transparent;
 }
 
 .about-header-text:hover {
-  border-bottom: 2.5px solid rgb(255, 203, 106);
+  border-bottom: 2.5px solid #4c8863;
 
 }
 

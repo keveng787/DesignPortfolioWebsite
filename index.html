@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Hello HTML explorer! I apologize in advacnce for the terrible html :P  -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +15,7 @@
   <link rel="stylesheet" href="style/portfolio-pieces.css">
   <link rel="stylesheet" href="style/general.css">
   <link rel="stylesheet" href="style/nav.css">
+  <link rel="stylesheet" href="https://use.typekit.net/mpf1qhf.css">
   <script defer src="app.js"></script>
 
   <title>KevinEngPortfolio</title>
@@ -31,19 +34,43 @@
   <section class="landing-section hidden" id="top">
     <div class="landing-grid">
       <div class="intro-container">
-        <h1 class="intro-text">
-          Hi, my <br>
-          name is <strong>Kevin</strong>
+        <h1>
+          Hello! I'm <span>Kevin</span> <br>
+          a <span>UX designer</span>
         </h1>
-        <p class="intro-description">
-          I'm a developer and designer.
+        <p>
+          I design thoughtful experiences and love learning through the process. <br> Currently Studying
+          CS + Design @ Northeastern University.
         </p>
       </div>
     </div>
   </section>
+  <div class="scroll-indicator">
+    <div class="scroll-arrow">↓</div>
+    <p>Projects</p>
+  </div>
   <section class="portfolio-section">
     <div class="thumbnail-grid">
       <!--Col1-->
+      <div class="thumnail-grid-column">
+        <a href="pages/digital-translation.html">
+          <div class="record-project-preview">
+            <img class="thumbnail" src="images/landing-images/RecordThumnail.png" alt="">
+          </div>
+        </a>
+        <p class="preview-description">
+          Digital Translation: Record Player
+        </p>
+        <!-- <a href="pages/digital-translation.html">
+          <div class="record-project-preview">
+            <img class="thumbnail" src="images/landing-images/RecordThumnail.png" alt="">
+          </div>
+        </a>
+        <p class="preview-description">
+          Digital Translation: Record Player
+        </p> -->
+      </div>
+      <!--Col2-->
       <div class="thumnail-grid-column">
         <a href="pages/spotify-page.html">
           <div class="spotify-project-preview">
@@ -53,16 +80,20 @@
         <p class="preview-description">
           Spotify Social Feature
         </p>
-        <a href="pages/digital-translation.html">
-          <div class="record-project-preview">
-            <img class="thumbnail" src="images/landing-images/RecordThumnail.png" alt="">
-          </div>
-        </a>
-        <p class="preview-description">
-          Digital Translation: Record Player
-        </p>
+
+        <!-- <div>
+          <a href="/pages/boston-t-page.html">
+            <div class="t-project-preview">
+              <img class="thumbnail" src="images/landing-images/Display1Orange.jpg" alt="">
+            </div>
+          </a>
+          <p class="preview-description">
+            Boston T Redesign
+          </p>
+        </div> -->
+
       </div>
-      <!--Col2-->
+      <!--Col3-->
       <div class="thumnail-grid-column">
         <a href="/pages/travel-page.html">
           <div class="leave-project-preview">
@@ -72,19 +103,7 @@
         <p class="preview-description">
           Travel App for Students
         </p>
-        <a href="/pages/boston-t-page.html">
-          <div class="t-project-preview">
-            <img class="thumbnail" src="images/landing-images/Display1Orange.jpg" alt="">
-          </div>
-        </a>
-
-        <p class="preview-description">
-          Boston T Redesign
-        </p>
-      </div>
-      <!--Col3-->
-      <div class="thumnail-grid-column">
-        <a href="pages/kino-page.html">
+        <!-- <a href="pages/kino-page.html">
           <div class="kino-project-preview">
             <img class="thumbnail" src="images/landing-images/KinoMock.png" alt="">
           </div>
@@ -92,15 +111,13 @@
         <p class="preview-description">
           Kino Movie App
         </p>
-
+      </div> -->
       </div>
-    </div>
-
   </section>
 
-  <div>
-    <img src="images/landing-images/waves.svg" class="waves" alt="">
-  </div>
+  <section id="forest-zone">
+    <img src="images/landing-images/waves.svg" class="waves" alt="" draggable="false">
+  </section>
 
   <section class="about-section" id="about-section-link">
     <div class="about-grid">
@@ -118,7 +135,7 @@
         </p>
       </div>
       <div class="face-container">
-        
+
       </div>
     </div>
     <button onclick="topFunction()" id="myBtn" class="top-button" title="Go to top">Beam me up!</button>
