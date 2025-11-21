@@ -28,42 +28,43 @@
   gap: 20px;
 }
 
-.spotify-project-preview,
-.t-project-preview,
-.leave-project-preview,
-.kino-project-preview,
-.record-project-preview {
+.generic-project-preview {
+  aspect-ratio: 7 / 8;   /* or whatever ratio you want */
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  
   background-color: rgb(210, 210, 194);
   width: 100%;
-  border-radius: 10px;
+  border-radius: 2%;
   box-sizing: border-box;
+  
   cursor: pointer;
-
-  transition: box-shadow .15s ease;
+  overflow: hidden;
+  flex-grow: 1;
 }
 
-.spotify-project-preview:hover,
-.t-project-preview:hover,
-.leave-project-preview:hover,
-.kino-project-preview:hover,
-.record-project-preview:hover {
-  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.12);
+.generic-project-preview img {
+  max-width: 100%;            
+  max-height: 100%;
+  width: auto;               
+  height: auto;              
+  object-fit: contain;       
+  overflow: hidden;
+  
+  transition: all 0.4s ease-out;
+  flex-grow: 1;
+
 }
 
-.spotify-project-preview img,
-.t-project-preview img,
-.leave-project-preview img,
-.kino-project-preview img,
-.record-project-preview img {
-  max-width: 100%;            /* Image will not exceed container width */
-  max-height: 100%;           /* Image will not exceed container height */
-  width: auto;                /* Control the width based on content */
-  height: auto;               /* Maintain aspect ratio */
-  object-fit: contain;        /* Ensure the image fits within the container */
+.generic-project-preview img {
+  border-radius: inherit; /* match the container's radius */
+}
+
+.generic-project-preview img:hover {
+  transform: scale(1.05);
+  /* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.12); */
 }
 
 .spotify-project-preview {
@@ -83,9 +84,14 @@
   padding: 10%;
 }
 
+.mfaforms-project-preview {
+  margin-top: 0px;
+}
+
 .preview-description {
   color: #454545;
   font-size: 1rem;
   margin: 0px;
   margin-top: -8px;
 }
+
