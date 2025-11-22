@@ -36,8 +36,8 @@ function topFunction() {
 
 const forest = document.getElementById("forest-zone");
 let lastPlantTime = 0;
-const plantInterval = 280;
-const topPadding = 65; // trees only appear below this
+const plantInterval = 240;
+const topPadding = 60; // trees only appear below this
 const botPadding = 65; // trees only appear above this
 
 const minScale = 0.5; // smallest tree at top
@@ -47,7 +47,7 @@ const maxScale = 1.2; // largest tree at bottom
 const minY = topPadding; // start of gradient
 const maxY = forest.clientHeight - botPadding; // bottom of gradient
 const topColor = [53, 50, 54]; // top color
-const bottomColor = [30, 25, 31]; // bottom color
+const bottomColor = [34, 34, 39]; // bottom color
 
 const maxTrees = 100; 
 
@@ -97,4 +97,18 @@ forest.addEventListener("mousemove", (e) => {
   }
 });
 
+let lastDPR = window.devicePixelRatio;
+
+function clearTrees() {
+  const trees = forest.querySelectorAll(".tree");
+  trees.forEach(t => t.remove());
+}
+
+setInterval(() => {
+  const currentDPR = window.devicePixelRatio;
+  if (currentDPR !== lastDPR) {
+    lastDPR = currentDPR;
+    clearTrees();
+  }
+}, 200);
 

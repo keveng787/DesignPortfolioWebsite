@@ -1,13 +1,20 @@
+.portfolio-section {
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 48px;
+  margin-bottom: 8rem;
+}
+
+h3 {
+  color: rgb(27, 27, 27);
+}
+
 .thumbnail-grid {
   /* FAF7F0 */ 
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
-  
-  padding-left: 6%;
-  padding-right: 6%;
-  padding-top: 48px;
-  padding-bottom: 188px;
+  margin-bottom: 4rem;
 }
 
 @media (max-width:950px) {
