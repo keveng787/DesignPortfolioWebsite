@@ -2,14 +2,9 @@
   margin: 0px;
 }
 
-.logo-text {
-  font-family: 'Alfabet', 'Inter', sans-serif;
-  border-bottom: 2.5px solid transparent;
-  transition: all .2s;
-}
-
-.logo-text:hover {
-  border-bottom: 2.5px solid #4c8863;
+h5 {
+  color: rgb(53, 53, 53);
+  font-weight: 500;
 }
 
 body {
@@ -25,7 +20,7 @@ body {
 ul, 
 p {
   color: rgb(77, 77, 77);
-  font-size: 1rem;
+  font-size: .9rem;
   line-height: 140%;
   margin: 0px;
 }
@@ -47,13 +42,14 @@ p {
   justify-content: center;
 }
 
-h2 {
-  margin-bottom: 0.2em;
-}
 
 .project-title {
   font-size: 36px;
   font-weight: 800;
+}
+
+.metadata {
+  font-weight: 500;
 }
 
 .attribute-list {
@@ -102,6 +98,25 @@ img {
   height: auto;
   object-fit: contain;
   border-radius: 5px;
+}
+
+.image-frame {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: .5rem;
+
+  background-color: #ecf0f5;
+}
+
+.image-frame img {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.096);
+}
+
+.image-frame p {
+  margin-top: 1rem;
+  font-size: .8rem;
+  font-weight: 500;
 }
 
 .wide-img {
